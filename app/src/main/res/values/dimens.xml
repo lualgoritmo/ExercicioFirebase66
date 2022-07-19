@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="defaultSize_16">16sp</dimen>
+    <dimen name="default_size_16">16sp</dimen>
+    <dimen name="txtPadding_2">2dp</dimen>
+    <dimen name="txtMarginTop_2">2dp</dimen>
+</resources>

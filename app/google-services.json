@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "809513116218",
+    "project_id": "exerciciofirebase-e3541",
+    "storage_bucket": "exerciciofirebase-e3541.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809513116218:android:6f93770051e0cee2960b03",
+        "android_client_info": {
+          "package_name": "br.com.exerciciofirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809513116218-rtpeuq7u91bq6gdml6gv24i0q7cgom3t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA77BY7jvMnPFUULx9gMRI5KUH-Pu0Vz3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809513116218-rtpeuq7u91bq6gdml6gv24i0q7cgom3t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
