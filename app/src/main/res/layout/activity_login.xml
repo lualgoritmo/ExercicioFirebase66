@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_margin="@dimen/default_size_16"
+    android:orientation="vertical"
     tools:context=".ui.login.view.LoginActivity">
 
     <EditText
@@ -27,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Senha"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:textSize="@dimen/default_size_16"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,10 +39,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/txtMarginTop_2"
+        android:inputType="text"
+        android:padding="@dimen/txtPadding_2"
         android:text="Faça o seu cadastro"
         android:textAlignment="textEnd"
         android:textSize="@dimen/default_size_16"
-        android:padding="@dimen/txtPadding_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
@@ -52,7 +53,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:inputType="text"
         android:text="Entrar"
         android:textSize="@dimen/default_size_16"
         android:textStyle="bold"

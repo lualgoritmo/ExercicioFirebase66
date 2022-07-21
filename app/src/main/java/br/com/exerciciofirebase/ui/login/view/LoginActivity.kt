@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity() {
         binding.txtToRegister?.setOnClickListener {
             initRegister()
         }
-        binding.btnLoginUser?.setOnClickListener {
+        binding.btnLoginUser.setOnClickListener {
             val user = getUserData()
             viewModel.validateUserData(user)
         }
@@ -37,9 +37,9 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun getUserData(): User {
-        var email = binding.edtEmail.text.toString()
-        var password = binding.edtPassword?.text.toString()
-        return User(email, password)
+        return User(
+            email = binding.edtEmail?.text.toString(),
+            password = binding.edtPassword?.text.toString())
     }
 
     private fun homeGoTo(user: User) {

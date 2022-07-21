@@ -26,6 +26,7 @@ class AuthenticationRepository {
     fun loginUser(email: String, password: String): Task<AuthResult> {
         return auth.signInWithEmailAndPassword(email, password)
     }
+
     fun getNameUser(): String = auth.currentUser?.displayName.toString()
 
     fun getEmailUser(): String = auth.currentUser?.email.toString()

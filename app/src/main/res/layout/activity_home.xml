@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.view.HomeActivity">
 
+    <Button
+        android:id="@+id/btnLoginExit"
+        android:layout_width="167dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:inputType="text"
+        android:text="Sair"
+        android:textSize="@dimen/default_size_16"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/nameUserHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/nameUserHome"
         android:layout_width="match_parent"
@@ -15,7 +29,58 @@
         android:textSize="@dimen/defaultSize_16"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userEmailHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text=""
+        android:textSize="@dimen/defaultSize_16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameUserHome" />
+
+    <EditText
+        android:id="@+id/etMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:hint="Digite uma mensagem"
+        android:textSize="@dimen/defaultSize_16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userEmailHome" />
+
+    <Button
+        android:id="@+id/saveMsg"
+        android:layout_width="167dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="28dp"
+        android:inputType="text"
+        android:text="Salvar Mensagem"
+        android:textSize="@dimen/default_size_16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMsg" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMsg"
+        android:layout_width="240dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveMsg" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

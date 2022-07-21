@@ -1,13 +1,12 @@
 package br.com.exerciciofirebase.ui.home.view
 
+import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import br.com.exerciciofirebase.R
 import br.com.exerciciofirebase.databinding.ActivityHomeBinding
 import br.com.exerciciofirebase.ui.home.viewmodel.HomeViewModel
+import br.com.exerciciofirebase.ui.login.view.LoginActivity
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
@@ -20,9 +19,19 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         displayUser()
+        binding.btnLoginExit.setOnClickListener { exitLogin() }
     }
-    private fun displayUser(){
-        val name = viewModel.getUserEmail()
-        binding.nameUserHome.text = "$name"
+
+    private fun displayUser() {
+        val name = viewModel.getUserName()
+        val email = viewModel.getUserEmail()
+        binding.nameUserHome.text = "Nome: $name"
+        binding.userEmailHome.text = "Email: $email"
+    }
+
+    private fun exitLogin() {
+        viewModel.logout()
+        this.finish()
+        startActivity(Intent(this, LoginActivity::class.java))
     }
 }

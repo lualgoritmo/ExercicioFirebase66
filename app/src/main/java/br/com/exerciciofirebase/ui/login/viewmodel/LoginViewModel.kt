@@ -25,7 +25,7 @@ class LoginViewModel : ViewModel() {
             user.password.isEmpty() -> {
                 _errorState.value = PASSWORD_ERROR_MESSAGE
             }
-            else-> {
+            else -> {
                 loginUser(user)
             }
         }
